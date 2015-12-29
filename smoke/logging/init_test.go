@@ -20,19 +20,19 @@ import (
 const (
 	SIMPLE_RUBY_APP_BITS_PATH = "../../assets/ruby_simple"
 
-	CF_API_TIMEOUT_OVERRIDE = 1 * time.Minute
+	CF_API_TIMEOUT_OVERRIDE = 2 * time.Minute
 
 	// timeout for most cf cli calls
-	CF_TIMEOUT_IN_SECONDS = 30
+	CF_TIMEOUT_IN_SECONDS = 60
 
 	// timeout for cf push cli calls
-	CF_PUSH_TIMEOUT_IN_SECONDS = 300
+	CF_PUSH_TIMEOUT_IN_SECONDS = 600
 
 	// timeout for cf scale cli calls
-	CF_SCALE_TIMEOUT_IN_SECONDS = 120
+	CF_SCALE_TIMEOUT_IN_SECONDS = 240
 
 	// timeout for cf app cli calls
-	CF_APP_STATUS_TIMEOUT_IN_SECONDS = 120
+	CF_APP_STATUS_TIMEOUT_IN_SECONDS = 240
 )
 
 func TestSmokeTests(t *testing.T) {
